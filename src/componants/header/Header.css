@@ -3,3 +3,23 @@
     height: 40%;
     margin-top: 10px;
 }
+.image-text {
+    justify-content: center;
+    align-items: center;
+    position: absolute;  
+    font-style: oblique;
+    font-family: cursive;
+    font-size: 5vw; 
+    color: rgb(0, 0, 0);
+    text-align: center; 
+    width: 100%; 
+}
+.display {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
