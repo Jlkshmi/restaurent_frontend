@@ -1,0 +1,32 @@
+.catogery_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4,1fr);
+}
+.catogery_wrapper1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    border-radius: 5px;
+    padding: 10px; 
+    width: 300px;
+    border: none;
+    box-shadow: #515050 3px 3px 3px 3px;
+    cursor: pointer;
+}
+.catogery_img{
+    height: 250px;
+    width: 200px;
+    object-fit: contain;
+    align-content: center;
+    position: relative;
+}
+.catogery_text{
+    font-family:Arial, Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

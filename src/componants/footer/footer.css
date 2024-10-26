@@ -1,0 +1,22 @@
+.footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: fit-content;
+}
+.footer1{
+    display: flex;
+    align-items: center;
+}
+.footer_fb{
+    width:50px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.footer_twitter{
+    width: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+}
