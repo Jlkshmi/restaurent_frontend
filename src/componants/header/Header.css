@@ -1,25 +1,82 @@
-.bg_image{
-    width: 100%;
-    height: 40%;
-    margin-top: 10px;
-}
-.image-text {
-    justify-content: center;
-    align-items: center;
-    position: absolute;  
-    font-style: oblique;
-    font-family: cursive;
-    font-size: 5vw; 
-    color: rgb(0, 0, 0);
-    text-align: center; 
-    width: 100%; 
-}
-.display {
+.header-container {
     position: relative;
-    display: flex;
     width: 100%;
+    height: 400px;
     overflow: hidden;
-    padding-top: 10px;
-    align-items: center;
+}
+
+.bg-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.header-text {
+    color: rgb(179, 176, 176);
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.tagline {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #e9a846;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #db9749;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; 
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #ef927d; 
 }

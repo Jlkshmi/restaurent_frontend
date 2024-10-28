@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import "./details.css"
+import CartContext from '../../../../context/UserContext';
 
 const biryaniList = [
     { 
@@ -88,6 +89,7 @@ function BiriyaniDetails() {
         return total + (addonQuantities[addon] * 50);
     }, 0);
     const totalPrice = (biryani.price * quantity) + totalAddonCost;
+
     return (
         <div className="detail">
             <h1>{biryani.name}</h1>
@@ -119,6 +121,7 @@ function BiriyaniDetails() {
                     </div>
                 ))}
             </div>
+
             <h3>Total Price: ₹{totalPrice}</h3>
         </div>
     );

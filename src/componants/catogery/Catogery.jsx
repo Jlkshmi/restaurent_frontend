@@ -65,6 +65,14 @@ const navigate = useNavigate()
                         <h3 className='catogery_text'>COOL DRINKS</h3>
                     </div>
                 </div>
+                <div className='catogery_wrapper1' onClick={()=>navigate('/juice')}>
+                    <div>
+                        <img src='/images/juice.jpg' className='catogery_img' />
+                    </div>
+                    <div>
+                        <h3 className='catogery_text'>Juice</h3>
+                    </div>
+                </div>
             </div>
         </>
 

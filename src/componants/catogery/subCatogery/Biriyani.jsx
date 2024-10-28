@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./subcatogery.css"
 import { Link } from 'react-router-dom';
+import CartContext from '../../../context/UserContext';
 
 const biryaniList = [
         { 
@@ -72,6 +73,7 @@ const biryaniList = [
     const filteredBiryanis = biryaniList.filter(biryani =>
       biryani.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
+    const {addToCart} = useContext(CartContext)
     return (
         <div className="wrapper">
             <h1>Biryani Varieties</h1>
@@ -90,7 +92,8 @@ const biryaniList = [
                         <div>
                             <h2>{biryani.name}</h2>
                             <h2>{biryani.price} RS</h2>
-                            <p>Category: {biryani.category}</p>  
+                            <p>Category: {biryani.category}</p> 
+                            <button onClick={() => addToCart(biryani)}>Add to Cart</button> 
                         </div>
                         
                     </li>

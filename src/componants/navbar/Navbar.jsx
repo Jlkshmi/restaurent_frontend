@@ -12,6 +12,7 @@ function Navbar() {
       <ul className="navbar-links">
         <li><Link to="/">HOME</Link></li>
         <li><Link to="/category">MENU</Link></li>
+        <li><Link to="/cartpage"><i className="fa-solid fa-cart-shopping"></i></Link></li>
       </ul>
     </nav>
     </>

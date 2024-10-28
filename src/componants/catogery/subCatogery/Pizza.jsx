@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom';
+import CartContext from '../../../context/UserContext';
 
 const pizzaList = [
     { 
@@ -64,6 +65,7 @@ function Pizza() {
     const filteredPizza = pizzaList.filter(pizza =>
         pizza.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
+    const {addToCart} = useContext(CartContext)
   return (
     <>
     <div className="wrapper">
@@ -83,7 +85,8 @@ function Pizza() {
                         <div>
                             <h2>{pizza.name}</h2>
                             <h2>{pizza.price} RS</h2>
-                            <p>Category: {pizza.category}</p>  
+                            <p>Category: {pizza.category}</p> 
+                            <button onClick={() => addToCart(pizza)}>Add to Cart</button> 
                         </div>
                         
                     </li>

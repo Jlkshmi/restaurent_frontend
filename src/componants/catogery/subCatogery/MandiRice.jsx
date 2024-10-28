@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom';
+import CartContext from '../../../context/UserContext';
 const mandiList = [
     { 
         name: 'Chicken Mandi', 
@@ -56,6 +57,7 @@ function MandiRice() {
     const filteredMandi = mandiList.filter(mandi =>
         mandi.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
+    const {addToCart} = useContext(CartContext)
   return (
     <>
      <div className="wrapper">
@@ -75,7 +77,8 @@ function MandiRice() {
                         <div>
                             <h2>{mandi.name}</h2>
                             <h2>{mandi.price} RS</h2>
-                            <p>Category: {mandi.category}</p>  
+                            <p>Category: {mandi.category}</p> 
+                            <button onClick={() => addToCart(mandi)}>Add to Cart</button> 
                         </div>
                        
                     </li>

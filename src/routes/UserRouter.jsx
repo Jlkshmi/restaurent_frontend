@@ -16,6 +16,10 @@ import PizzaDetailsPage from '../pages/PizzaDetailsPage'
 import SandwichDetailsPage from '../pages/SandwichDetailsPage'
 import FriedRiceDetailsPage from '../pages/FriedRiceDetailsPage'
 import CoolDrinksDetailsPage from '../pages/CoolDrinksDetailsPage'
+import AddToCartPage from '../pages/AddToCartPage'
+import JuicePage from '../pages/JuicePage'
+import JuiceDetailsPage from '../pages/JuiceDetailsPage'
+
 
 function UserRouter() {
   return (
@@ -30,6 +34,7 @@ function UserRouter() {
         <Route path='cooldrinks' element={<CooldrinksPage/>}/>
         <Route path='sandwich' element={<SandwichPage/>}/>
         <Route path='friedrice' element={<FriedricePage/>}/>
+        <Route path='juice' element={<JuicePage/>}/>
         <Route path='biriyani/:name' element={<BiriyaniDetailsPage/>}/>
         <Route path='burger/:name' element={<BurgerDetailsPage/>}/>
         <Route path='mandi/:name' element={<MandiDetailsPage/>}/>
@@ -37,6 +42,10 @@ function UserRouter() {
         <Route path='sandwich/:name' element={<SandwichDetailsPage/>}/>
         <Route path='friedrice/:name' element={<FriedRiceDetailsPage/>}/>
         <Route path='cooldrinks/:name' element={<CoolDrinksDetailsPage/>}/>
+        <Route path='juice/:name' element={<JuiceDetailsPage/>}/>
+        <Route path='cartpage' element={<AddToCartPage/>}/>
+        
+
    </Routes>
    </>
   )

@@ -12,6 +12,13 @@
   }
   
   .wrapper-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+    grid-template-rows: repeat(4,1fr);
     list-style-type: none;
     padding: 0;
     
@@ -30,7 +37,7 @@
     background-color: #e0e0e0;
   }
   .wrapper-image{
-    height:250px;
+    height:100px;
     width:200px;
     object-fit: contain;
     align-content: center;
